@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1684037158983750}
+  m_IsPrefabAsset: 1
+--- !u!1 &1684037158983750
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4359367494039422}
+  - component: {fileID: 114593705048860952}
+  - component: {fileID: 95115403254325574}
+  m_Layer: 0
+  m_Name: TextManager
+  m_TagString: TextManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4359367494039422
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1684037158983750}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &95115403254325574
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1684037158983750}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a1096c6085cbaec488c6b593b29bded9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114593705048860952
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1684037158983750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c38408b8b4399e44c86ee505ebdfc39b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 0}
+  typingSpeed: 0.01
+  modifier: 10
+  historia:
+  - talker:
+    - '[First Mate]: '
+    - '[Captain]: '
+    - '[Captain]: '
+    - '"... follow ..."'
+    - '[Captain]: '
+    - '[First Mate]: '
+    - '[Captain]: '
+    - '"... follow ..."'
+    sentences:
+    - '"Captain! This wind is too strong! We''re gonna lose the sails!"'
+    - '"Men! Get a grip on yourselves!"'
+    - '"We need to find our way out of this storm or we''re dead!"'
+    - 
+    - '"...?"'
+    - '"... the he-?! Cap''n, do you hear this voice!?"'
+    - '"Shush sailor! Let me think!"'
+    - 
+    special: 0000000100000001
+  - talker:
+    - '[First Mate]: '
+    - '[Captain]: '
+    - '[Captain]: '
+    - '"... faster ..."'
+    sentences:
+    - '"Sir, these headings make no sense!"'
+    - '"But they are working!"'
+    - '"If we keep this up, we might outrun the storm!"'
+    - 
+    special: 00000001
+  - talker:
+    - '[First Mate]: '
+    - '[First Mate]: '
+    - '[Captain]: '
+    - '[First Mate]: '
+    sentences:
+    - '"Oh lord - what IS that thing!?"'
+    - '"Look! In the horizon!"'
+    - '"...!"'
+    - '"We need to go!"'
+    special: 00000000
+  - talker:
+    - '[Captain]: '
+    - '[Captain]: '
+    - '[First Mate]: '
+    - '[Captain]: '
+    - '[First Mate]: '
+    - '"... eat ..."'
+    sentences:
+    - '"How..."'
+    - '"The winds''ve completely stopped. We''re adrift!"'
+    - '"...!"'
+    - '"...!"'
+    - '"Sir I... I don''t think that voice was speaking with-"'
+    - 
+    special: 000000000001
+  continueButton: {fileID: 0}
+  animator: {fileID: 95115403254325574}
+  parteHistoria: 0
+  historiaCompleta: 0
